@@ -1,4 +1,6 @@
 <!-- toc -->
+* React Query
+* Axios
 * Tailwind
 * Typescript
 * pnpm
