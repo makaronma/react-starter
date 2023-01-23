@@ -5,7 +5,7 @@ import { Post } from '../../types/data/post';
 const usePosts = () =>
   useQuery<Post[], Error>(["posts"], () =>
     apiBaseClient
-      .get("/posts")
+      .get<Post[]>("/posts")
       .then((res) => res.data)
   );
 
