@@ -1,7 +1,6 @@
 import { atom, useAtomValue, useSetAtom } from "jotai";
 import { v4 as uid } from "uuid";
 import { useInterval } from "usehooks-ts";
-import { useAtomsDebugValue,useAtomDevtools } from 'jotai-devtools'
 
 interface Item {
   id: string;
@@ -65,15 +64,9 @@ const ControlProgress = () => {
 
 
 
-const DebugAtoms = () => {
-  useAtomsDebugValue()
-  return null
-}
-
 const JotaiDemo = () => {
   return (
     <>
-      <DebugAtoms />
       <ItemList />
       <AddItem />
       <ProgressTracker />
